@@ -1,5 +1,4 @@
 ﻿# Heart-Disease-predicting-app
-# Heart Disease Prediction App
 
 ## Purpose
 
