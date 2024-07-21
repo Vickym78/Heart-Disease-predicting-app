@@ -83,8 +83,17 @@ prediction = clf.predict(input_scaled)
 prediction_proba = clf.predict_proba(input_scaled)
 
 st.subheader("Prediction")
-heart_disease = np.array(["No Heart Disease", "Heart Disease"])
+heart_disease = np.array(["Healthy Heart less chance of Heart Disease", "Chances of Heart Disease Visit Doctor"])
 st.write(heart_disease[prediction][0])
 
-st.subheader("Prediction Probability")
-st.write(prediction_proba)
+
+prediction_proba = 0.7  # Replace with your actual prediction probability
+
+threshold = 0.5  # You can adjust this threshold based on your model's confidence
+
+if prediction_proba >= threshold:
+    st.subheader("Prediction Probability: Yes")
+    st.write(prediction_proba)
+else:
+    st.subheader("Prediction Probability: No")
+    st.write(prediction_proba)
