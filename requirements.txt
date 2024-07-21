@@ -1,4 +1,4 @@
 streamlit
-pandas>=1.5.0
+pandas==2.0.2  # Assuming Streamlit 1.36.0 supports it
 numpy==1.24.3  # Assuming you're keeping this version
 scikit-learn==1.2.2  # Assuming you're keeping this version
