@@ -1,4 +1,4 @@
-streamlit==1.20.0
-pandas==1.5.3
-numpy==1.24.3
-scikit-learn==1.2.2
+streamlit==1.17.1
+pandas==1.5.3  # You can update pandas if needed, but 1.5.3 is still a good version
+numpy==1.24.3  # You can update numpy if needed, but 1.24.3 is still a good version
+scikit-learn==1.2.2  # You can update scikit-learn if needed, but 1.2.2 is still a good version
