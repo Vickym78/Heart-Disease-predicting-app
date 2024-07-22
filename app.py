@@ -87,10 +87,6 @@ prediction_proba = clf_importance.predict_proba(input_scaled)
 st.subheader('User Input parameters')
 st.write(input_df)
 
-st.subheader("Prediction")
-heart_disease = np.array(["Healthy Heart less chance of Heart Disease", "Chances of Heart Disease Visit Doctor"])
-st.write(heart_disease[prediction][0])
-
 
 # Display prediction
 st.subheader('Prediction')
