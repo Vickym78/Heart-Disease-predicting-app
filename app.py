@@ -7,9 +7,6 @@ from sklearn.linear_model import LogisticRegression
 from sklearn.tree import DecisionTreeClassifier
 from sklearn.ensemble import (
     RandomForestClassifier,
-    AdaBoostClassifier,
-    GradientBoostingClassifier,
-    BaggingClassifier
 )
 from sklearn.neighbors import KNeighborsClassifier
 
@@ -32,8 +29,6 @@ models = {
     "Logistic Regression": LogisticRegression(max_iter=1000),
     "Decision Tree": DecisionTreeClassifier(),
     "Random Forest": RandomForestClassifier(),
-    "AdaBoost": AdaBoostClassifier(),
-    "Gradient Boosting": GradientBoostingClassifier(),
     "K-Nearest Neighbors": KNeighborsClassifier(),
 }
 
