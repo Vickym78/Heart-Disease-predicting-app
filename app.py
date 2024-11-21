@@ -100,9 +100,9 @@ if st.button("Submit"):
         st.write("### Model Predictions:")
         for model_name, prediction in predictions.items():
             if prediction == 1:
-                st.success(f"**{model_name}:** High chance of heart disease")
+                st.warning(f"**{model_name}:** High chance of heart disease")
             else:
-                st.warning(f"**{model_name}:** Low chance of heart disease")
+                st.success(f"**{model_name}:** Low chance of heart disease")
         
         st.write("### Summary:")
         st.write(f"Total 'Yes' predictions: **{yes_count}**")
@@ -110,7 +110,7 @@ if st.button("Submit"):
         
         if yes_count > 0:
             st.write("### Health Recommendations:")
-            st.success("**You should consider the following tips for heart health:**")
+            st.warning("**You should consider the following tips for heart health:**")
             st.write("- Maintain a balanced diet rich in fruits, vegetables, and whole grains.")
             st.write("- Engage in regular physical activity.")
             st.write("- Avoid smoking and limit alcohol consumption.")
@@ -119,7 +119,7 @@ if st.button("Submit"):
             
             st.write("**Get tested:** [Heart Care India](https://www.heartcareindia.com)")
         else:
-            st.write("### Health Recommendations:")
+            st.success("### Health Recommendations:")
             st.info("**You are advised to maintain a healthy lifestyle:**")
             st.write("- Continue to maintain a healthy lifestyle.")
             st.write("- Monitor your blood pressure and cholesterol levels.")
